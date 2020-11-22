@@ -1,0 +1,301 @@
+[
+  {
+    "id": "84b7cca9-945e-4252-9800-6a560d45ea8f",
+    "data": [
+      {
+        "text": "teach me ",
+        "userDefined": false
+      },
+      {
+        "text": "new words",
+        "alias": "course_id",
+        "meta": "@Course",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fab8e7d1-b714-43f7-971f-f20d93f84b0a",
+    "data": [
+      {
+        "text": "Teach me ",
+        "userDefined": false
+      },
+      {
+        "text": "vocabulary",
+        "alias": "course_id",
+        "meta": "@Course",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "49d901ff-8e26-4968-8d1b-802785d47456",
+    "data": [
+      {
+        "text": "i want to study ",
+        "userDefined": false
+      },
+      {
+        "text": "new words",
+        "alias": "course_id",
+        "meta": "@Course",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e5831932-f3a9-4937-b383-2015528bab01",
+    "data": [
+      {
+        "text": "learn ",
+        "userDefined": false
+      },
+      {
+        "text": "new vocabulary",
+        "alias": "course_id",
+        "meta": "@Course",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "a01a0727-551f-4ad3-8660-7a999a2f6b8f",
+    "data": [
+      {
+        "text": "learn ",
+        "userDefined": false
+      },
+      {
+        "text": "new word",
+        "alias": "course_id",
+        "meta": "@Course",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "425f2d0c-9bdd-4811-ba27-75d94bb788b4",
+    "data": [
+      {
+        "text": "I want to learn ",
+        "userDefined": false
+      },
+      {
+        "text": "new words",
+        "alias": "course_id",
+        "meta": "@Course",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "173f0806-727f-4bd4-b07a-1bd7b4af64e7",
+    "data": [
+      {
+        "text": "i want to study",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ccf7c87e-3a34-4ce8-bfc6-c9b80384801a",
+    "data": [
+      {
+        "text": "i want to study ",
+        "userDefined": false
+      },
+      {
+        "text": "vocabulary",
+        "alias": "course_id",
+        "meta": "@Course",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "11325e7f-3674-4211-a1a4-963580b4c9cf",
+    "data": [
+      {
+        "text": "I want to learn",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2fd2d3da-5941-4658-aff0-ad8ba4f4fc6c",
+    "data": [
+      {
+        "text": "Give me something to learn",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "05a5fc69-663d-4ec6-94c7-36026cc62f4d",
+    "data": [
+      {
+        "text": "I want to learn ",
+        "userDefined": false
+      },
+      {
+        "text": "some words",
+        "alias": "course_id",
+        "meta": "@Course",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0e5b2750-157c-452c-88ac-330e144ce09e",
+    "data": [
+      {
+        "text": "I want to learn ",
+        "userDefined": false
+      },
+      {
+        "text": "vocabulary",
+        "alias": "course_id",
+        "meta": "@Course",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4512c97c-a5d3-44bd-8d52-413cb8c92375",
+    "data": [
+      {
+        "text": "teach me ",
+        "userDefined": false
+      },
+      {
+        "text": "some words",
+        "alias": "course_id",
+        "meta": "@Course",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3e4fa0cd-76a7-4a42-8172-16ffb09d9238",
+    "data": [
+      {
+        "text": "teach me",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4743a091-5d13-4d5b-b034-3662b0617475",
+    "data": [
+      {
+        "text": "give me ",
+        "userDefined": false
+      },
+      {
+        "text": "new words",
+        "alias": "course_id",
+        "meta": "@Course",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "027e8371-cda9-4764-ad69-42dc72c55d74",
+    "data": [
+      {
+        "text": "give me some ",
+        "userDefined": false
+      },
+      {
+        "text": "new words",
+        "alias": "course_id",
+        "meta": "@Course",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "54e04ebd-c057-4e2b-ba10-497a8ea5960d",
+    "data": [
+      {
+        "text": "learn new ",
+        "userDefined": false
+      },
+      {
+        "text": "vocabularies",
+        "alias": "course_id",
+        "meta": "@Course",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8c15097d-d95f-4874-8696-9dfe4d637990",
+    "data": [
+      {
+        "text": "learn a ",
+        "userDefined": false
+      },
+      {
+        "text": "new word",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

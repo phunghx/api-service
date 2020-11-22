@@ -1,0 +1,62 @@
+[
+  {
+    "id": "6794a55d-c804-4c89-9309-40a4537f2b6c",
+    "data": [
+      {
+        "text": "Leave review",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fa1c7f7d-7d4e-41d1-8565-cebec940966b",
+    "data": [
+      {
+        "text": "quit review",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "52367b7d-8834-4b6d-9262-b53b3428e2c1",
+    "data": [
+      {
+        "text": "Exit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "updated": 0
+  },
+  {
+    "id": "cab46543-0375-469b-a169-ec2b754e9f04",
+    "data": [
+      {
+        "text": "I want to quit this process.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "855503bb-e7ea-4713-b598-9fee3c40c8c6",
+    "data": [
+      {
+        "text": "Stop review",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "76da2e22-e00c-495b-9052-b751988432d5",
+    "data": [
+      {
+        "text": "Next question",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e13f6da6-5197-45fb-87f2-06938e86c8ce",
+    "data": [
+      {
+        "text": "I want to skip this question",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "759bf51a-fcf5-4c5c-a174-85833d2b174c",
+    "data": [
+      {
+        "text": "Skip this question",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "67bd6837-daa7-4ce3-a745-3d6d47bc8fb2",
+    "data": [
+      {
+        "text": "Skip",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

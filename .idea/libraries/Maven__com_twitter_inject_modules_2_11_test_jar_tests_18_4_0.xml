@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.twitter:inject-modules_2.11:test-jar:tests:18.4.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/twitter/inject-modules_2.11/18.4.0/inject-modules_2.11-18.4.0-tests.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/twitter/inject-modules_2.11/18.4.0/inject-modules_2.11-18.4.0-test-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/twitter/inject-modules_2.11/18.4.0/inject-modules_2.11-18.4.0-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

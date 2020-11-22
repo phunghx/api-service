@@ -1,0 +1,26 @@
+[
+  {
+    "id": "b148ad7c-7fa6-4355-9349-06adf1b4b49b",
+    "data": [
+      {
+        "text": "Yes",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "55f31cb4-852a-44d0-9b7c-c38587e3bb8b",
+    "data": [
+      {
+        "text": "Yes, I know this question",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "value": "business",
+    "synonyms": [
+      "business"
+    ]
+  },
+  {
+    "value": "education",
+    "synonyms": [
+      "education"
+    ]
+  },
+  {
+    "value": "world",
+    "synonyms": [
+      "world"
+    ]
+  },
+  {
+    "value": "cuisine",
+    "synonyms": [
+      "cuisine",
+      "food",
+      "drink",
+      "food and drink"
+    ]
+  },
+  {
+    "value": "tech",
+    "synonyms": [
+      "tech",
+      "technology",
+      "IT",
+      "programming"
+    ]
+  },
+  {
+    "value": "science",
+    "synonyms": [
+      "science"
+    ]
+  },
+  {
+    "value": "politics",
+    "synonyms": [
+      "politics"
+    ]
+  },
+  {
+    "value": "sport",
+    "synonyms": [
+      "sport"
+    ]
+  },
+  {
+    "value": "health",
+    "synonyms": [
+      "health"
+    ]
+  },
+  {
+    "value": "education",
+    "synonyms": [
+      "education",
+      "teaching"
+    ]
+  },
+  {
+    "value": "travel",
+    "synonyms": [
+      "travel",
+      "traveling"
+    ]
+  }
+]

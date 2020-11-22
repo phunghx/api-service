@@ -1,0 +1,77 @@
+{
+  "id": "6eb44f4e-0070-488e-a03d-e8710ca7f682",
+  "name": "kiki.learn",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "kiki.learn",
+      "affectedContexts": [
+        {
+          "name": "learn_vocabulary",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "kikilearnvocabulary-followup",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "review",
+          "parameters": {},
+          "lifespan": 0
+        },
+        {
+          "name": "review_test",
+          "parameters": {},
+          "lifespan": 0
+        },
+        {
+          "name": "dictionary_search",
+          "parameters": {},
+          "lifespan": 0
+        }
+      ],
+      "parameters": [
+        {
+          "id": "c8cb77f3-4762-45d1-9036-93e3f9a9d866",
+          "required": false,
+          "dataType": "@Course",
+          "name": "course_id",
+          "value": "$course_id",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What course do you want to learn?\n  1. Vocabulary"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

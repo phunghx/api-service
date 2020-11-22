@@ -1,0 +1,29 @@
+[
+  {
+    "value": "elementary",
+    "synonyms": [
+      "elementary",
+      "beginner"
+    ]
+  },
+  {
+    "value": "intermediate",
+    "synonyms": [
+      "intermediate"
+    ]
+  },
+  {
+    "value": "upper_intermediate",
+    "synonyms": [
+      "upper_intermediate",
+      "upper intermediate",
+      "high intermediate"
+    ]
+  },
+  {
+    "value": "advanced",
+    "synonyms": [
+      "advanced"
+    ]
+  }
+]

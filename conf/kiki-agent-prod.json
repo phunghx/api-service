@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kiki-agent-fwdnod",
+  "private_key_id": "9fc110b6126853989572a6ca4ff450354cac573e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQD27ypBPzlBLfFs\n0WMNPhR/hWIYEwbys2NuZ3GMfbmBAv+heR8SYsEwAJoPoPioASK25vobsYHSDu+2\nwHkbStjRKd6kKcpv/AS6c3IPY0HiCvHuKH41v+RFCKud6OitQVyIsYecuAHqML/A\nlh+h0sjT9qCt7ifnuqxViTCqpVovV0q0R5qDpowXUZvVStZooRxvMtRe4jeCkIMF\nNeTutsLL48jAkrNfTtFJButMA6RlJefB7V9IhJR0KLIM74LRyJ6tuPTWpUtief7z\n8Jy4XjYWoOdOHguOkDMtkK6dWggtxYODUyE3mrQWEdRDxPC7kSbEzHcraAbwsvHC\nZKfQonRJAgMBAAECggEAA6OlKY0ZZQ2oVLdddmSi9yfLrXCytgQoWDbhnR5POoio\nGP7l2OyQ2X58aa5HyPeIxarYmuEPs7GZ13P7XatJlb4dXTUwpYqtnkCSIYoyuLC1\nDxKgKHYt77357MpaiyZnrgj18xmnUwZ7LEE1yJblooj97A3vzZ8ruU1bzZLv1HVj\n+Uhv6HaFKRCznxRtMy/OamtmBGPSUovNfdWZfpTeZOzmU6ygn9h+klo9KGX8Zhpf\n3/a8nxAnPBRkkJtC+HP4/nSFuqNj+Ng+6EPKqO5QuGUjyYgjIxTYeo/OSxSCkLc8\n2agssEn9tQOuqPbZ0JmbMwo3Z/CQemBOaSg/DyzDXwKBgQD+BZ/tgphXAE0Tjyv7\nrDUjRXU42PMuvtg2HRrWVHUUJzBSMyuPrGLTX2OL4DKAmSPchc6tGrk0/OwT9XvM\ncC/3jZG60ErpnmKsMpoAtFtaDveVOAe8jhHqzYlLjtFlkZTlfhPcgoiPbKnjlPH/\nNmT0MJ047cc6V2Dx0D3fpyJZJwKBgQD422lTr3bClzqc4pUWhb98ACpUfHiMvsV1\nX9vpoOtFYKmW55qA7jmTjHCTxJHiIDVruyHtIfy8yQGhVSVMUToCOYuYRFewrQKn\nsC2PHSlAV8qGFifE4NAItDC/rEoOs6mngXzcUwQMa6SgQybH+yC1iLB33w/mbsbu\nJjEV4M3NDwKBgQDeoVNfOBwH9C2ZPNvRgUY5GYD5R7sqdvzLwIpq2i6acRY6lLpS\n+0TJ+Eoop1/bsVvqxCM1N7ymohzOCVJtBM4laqAUWMWvJq9YOCkdAPUnYwK+dxLg\nwKsXXPg9jngbSpJy6CLEGmtROG1VFo9Zm/Syx4CkClGX4kkG5fm0cKj79QKBgFJ/\nelVRz88Gj1m/C6mhwS78ZwwHD3epLpCQrLiwrg4b01zBfsjLMK8nWZLDEZGjF9KV\nANQ59i0nfbDcJzc7nj1qkkpyLZfWYxDwKMpO4oQAFpWI9rofxRd9lMOV/B8PlGiB\nVsE7jBYKAVNXr52QNPG5VLcIbZ74jl4YryEPm2olAoGAT1dtDaI+bq3u9C+fTmF7\n1InF71cXIor9jLDev5T4u+TZWdxNc2GqF+XZzJz4XE+d/FqtitTR0J8zw8GhsAY8\nPHUUvsokrri0njDei33eTKdt/82S3BuKTdyK6NcSNklabQ0iTrkSDwgxFjfu16rE\nRQ7/la4J4aTp6oeOQY5WM+A=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-womiba@kiki-agent-fwdnod.iam.gserviceaccount.com",
+  "client_id": "116630358209687771551",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-womiba%40kiki-agent-fwdnod.iam.gserviceaccount.com"
+}

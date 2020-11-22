@@ -1,0 +1,63 @@
+{
+  "id": "8c448c53-7d8c-4013-863f-68e801b39106",
+  "name": "kiki.review",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "kiki.review",
+      "affectedContexts": [
+        {
+          "name": "review",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "kikireview-followup",
+          "parameters": {},
+          "lifespan": 2
+        },
+        {
+          "name": "learn_vocabulary",
+          "parameters": {},
+          "lifespan": 0
+        },
+        {
+          "name": "learn_word",
+          "parameters": {},
+          "lifespan": 0
+        },
+        {
+          "name": "dictionary_search",
+          "parameters": {},
+          "lifespan": 0
+        },
+        {
+          "name": "examination_data",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "Here is these decks you have to review today:"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,56 @@
+{
+  "id": "2cc78149-1c14-412d-972c-033c0a5239ec",
+  "parentId": "c163a4b7-b8ec-43af-ae1e-cb5daec0bbf4",
+  "rootParentId": "c163a4b7-b8ec-43af-ae1e-cb5daec0bbf4",
+  "name": "kiki.dictionary.exit",
+  "auto": true,
+  "contexts": [
+    "dictionary_search",
+    "kikidictionarysearch-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "kiki.dictionary.exit",
+      "affectedContexts": [
+        {
+          "name": "cancel-followup",
+          "parameters": {},
+          "lifespan": 2
+        },
+        {
+          "name": "dictionary_search",
+          "parameters": {},
+          "lifespan": 0
+        },
+        {
+          "name": "kikidictionarysearch-followup",
+          "parameters": {},
+          "lifespan": 0
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Thanks for using this. Bye!",
+            "Bye!"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

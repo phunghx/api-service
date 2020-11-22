@@ -1,0 +1,106 @@
+[
+  {
+    "value": "vi",
+    "synonyms": [
+      "vi",
+      "Vietnamese",
+      "Vietnam",
+      "Viet nam",
+      "Tieng viet",
+      "Tiếng việt",
+      "Việt",
+      "Tiếng Kinh",
+      "tieng kinh",
+      "vietnamese"
+    ]
+  },
+  {
+    "value": "en",
+    "synonyms": [
+      "en",
+      "English",
+      "England",
+      "Tieng anh",
+      "Tiếng anh",
+      "anh ngữ"
+    ]
+  },
+  {
+    "value": "es",
+    "synonyms": [
+      "es",
+      "Spanish",
+      "Tiếng Tây Ban nha"
+    ]
+  },
+  {
+    "value": "da",
+    "synonyms": [
+      "da",
+      "Danish"
+    ]
+  },
+  {
+    "value": "de",
+    "synonyms": [
+      "de",
+      "German"
+    ]
+  },
+  {
+    "value": "fr",
+    "synonyms": [
+      "fr",
+      "French"
+    ]
+  },
+  {
+    "value": "ja",
+    "synonyms": [
+      "ja",
+      "Japanese"
+    ]
+  },
+  {
+    "value": "ar",
+    "synonyms": [
+      "ar",
+      "Arabic"
+    ]
+  },
+  {
+    "value": "pl",
+    "synonyms": [
+      "pl",
+      "Polish"
+    ]
+  },
+  {
+    "value": "ko",
+    "synonyms": [
+      "ko",
+      "Korean"
+    ]
+  },
+  {
+    "value": "pt",
+    "synonyms": [
+      "pt",
+      "Portuguese"
+    ]
+  },
+  {
+    "value": "zh-hant",
+    "synonyms": [
+      "zh-hant",
+      "Chinese Traditional"
+    ]
+  },
+  {
+    "value": "zh-hans",
+    "synonyms": [
+      "zh-hans",
+      "Chinese Simplified"
+    ]
+  }
+]

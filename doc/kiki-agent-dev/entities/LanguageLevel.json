@@ -1,0 +1,9 @@
+{
+  "id": "a5755751-cbc6-4ceb-bc57-d26d2cb0fad1",
+  "name": "LanguageLevel",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

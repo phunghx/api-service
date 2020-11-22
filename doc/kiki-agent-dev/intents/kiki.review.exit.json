@@ -1,0 +1,52 @@
+{
+  "id": "01fad57e-65b4-49e6-8c5e-92c7cf031472",
+  "parentId": "8c448c53-7d8c-4013-863f-68e801b39106",
+  "rootParentId": "8c448c53-7d8c-4013-863f-68e801b39106",
+  "name": "kiki.review.exit",
+  "auto": true,
+  "contexts": [
+    "review"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "kiki.review.exit",
+      "affectedContexts": [
+        {
+          "name": "review",
+          "parameters": {},
+          "lifespan": 0
+        },
+        {
+          "name": "learn_vocabulary",
+          "parameters": {},
+          "lifespan": 0
+        },
+        {
+          "name": "examination_data",
+          "parameters": {},
+          "lifespan": 1
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "Exit review"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

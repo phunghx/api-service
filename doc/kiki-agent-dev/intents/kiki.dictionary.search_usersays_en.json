@@ -1,0 +1,301 @@
+[
+  {
+    "id": "299cafba-3dc0-4975-b5f7-91ca84b33d64",
+    "data": [
+      {
+        "text": "what is the meaning of ",
+        "userDefined": false
+      },
+      {
+        "text": "heart attack",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f7c5bcb5-5fea-428a-8b27-16ce5868d78c",
+    "data": [
+      {
+        "text": "what is the meaning of ",
+        "userDefined": false
+      },
+      {
+        "text": "heart attack",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6924e4ad-acb3-4aa0-abf5-742ee37dc24a",
+    "data": [
+      {
+        "text": "What\u0027s the meaning of ",
+        "userDefined": false
+      },
+      {
+        "text": "cat",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": ".",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f03d599f-16f4-4222-8380-fe013a66f72b",
+    "data": [
+      {
+        "text": "what\u0027s ",
+        "userDefined": false
+      },
+      {
+        "text": "mango",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Vietnamese",
+        "alias": "target_lang",
+        "meta": "@TargetDictLang",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a70fa35b-c442-495d-bc3e-c51049e51164",
+    "data": [
+      {
+        "text": "what is ",
+        "userDefined": false
+      },
+      {
+        "text": "mango",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "english",
+        "alias": "target_lang",
+        "meta": "@TargetDictLang",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "32f9bf33-91f8-4433-a930-aad5739b67d9",
+    "data": [
+      {
+        "text": "what\u0027s ",
+        "userDefined": false
+      },
+      {
+        "text": "mango",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "english",
+        "alias": "target_lang",
+        "meta": "@TargetDictLang",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "dcb12df7-f231-4d4a-836f-903cf2cbf66c",
+    "data": [
+      {
+        "text": "what is the meaning of ",
+        "userDefined": false
+      },
+      {
+        "text": "heart attack",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "English",
+        "alias": "target_lang",
+        "meta": "@TargetDictLang",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ff55a5fd-32e0-4e34-a34b-db0c192f4481",
+    "data": [
+      {
+        "text": "what\u0027s the meaning of ",
+        "userDefined": false
+      },
+      {
+        "text": "heart attack",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "Vietnamese",
+        "alias": "target_lang",
+        "meta": "@TargetDictLang",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a6c48ce9-050b-4d4a-98fb-afc788633e90",
+    "data": [
+      {
+        "text": "what\u0027s ",
+        "userDefined": false
+      },
+      {
+        "text": "cat",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "english",
+        "alias": "target_lang",
+        "meta": "@TargetDictLang",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "c9c2bf5d-2f47-41ab-9402-4770fc80d386",
+    "data": [
+      {
+        "text": "what\u0027s the meaning of ",
+        "userDefined": false
+      },
+      {
+        "text": "heart attack",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "20084f75-a466-4d83-9615-25c989c8f257",
+    "data": [
+      {
+        "text": "what is the meaning of ",
+        "userDefined": false
+      },
+      {
+        "text": "heart attack",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

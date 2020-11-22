@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Realtime Profiler</title>
+    <meta http-equiv="refresh" content="5">
+
+    <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+</head>
+
+<body>
+<table style="border-collapse:collapse;" border=1 cellpadding=5 cellspacing=5 width="100%">
+    <thead>
+    <tr>
+        <th colspan="9" style="background-color:aliceblue;">Request Profiling</th>
+    </tr>
+    <tr style="background-color: paleturquoise">
+        <th>No</th>
+        <th>Name</th>
+        <th>TotalReq</th>
+        <th>PendingReq</th>
+        <th>LastTmReq<br/>(milisecs)</th>
+        <th>HighestTmReq<br/>(milisecs)</th>
+        <th>TotalTmReq <br/>(milisecs)</th>
+        <th>Request Rate<br/>(req/second)</th>
+        <th>Time Rate<br/>(milisecs/req)</th>
+    </tr>
+    </thead>
+    <tbody style="text-align: right">
+    {{#profilers}}
+        <tr>
+            <td style="text-align: center">{{index}}</td>
+            <td style="text-align: left" class="name">{{name}}</td>
+            <td>{{totalRequest}}</td>
+            <td>{{pendingRequest}}</td>
+            <td>{{lastTime}}</td>
+            <td>{{highestTime}}</td>
+            <td>{{totalTime}}</td>
+            <td>{{procRate}}</td>
+            <td>{{timeRate}}</td>
+        </tr>
+    {{/profilers}}
+    </tbody>
+</table>
+<br/>
+
+
+<table style="border-collapse:collapse;" border=1 cellpadding=5 cellspacing=5 width="100%">
+    <thead>
+    <tr>
+        <th colspan="9" style="background-color:aliceblue;">Daily Request Profiling</th>
+    </tr>
+    <tr style="background-color: paleturquoise">
+        <th>No</th>
+        <th>Name</th>
+        <th>TotalReq</th>
+        <th>PendingReq</th>
+        <th>LastTmReq<br/>(milisecs)</th>
+        <th>HighestTmReq<br/>(milisecs)</th>
+        <th>TotalTmReq <br/>(milisecs)</th>
+        <th>Request Rate<br/>(req/second)</th>
+        <th>Time Rate<br/>(milisecs/req)</th>
+    </tr>
+    </thead>
+    <tbody style="text-align: right">
+    {{#dailyProfilers}}
+        <tr>
+            <td style="text-align: center">{{index}}</td>
+            <td style="text-align: left" class="name">{{name}}</td>
+            <td>{{totalRequest}}</td>
+            <td>{{pendingRequest}}</td>
+            <td>{{lastTime}}</td>
+            <td>{{highestTime}}</td>
+            <td>{{totalTime}}</td>
+            <td>{{procRate}}</td>
+            <td>{{timeRate}}</td>
+        </tr>
+    {{/dailyProfilers}}
+    </tbody>
+</table>
+
+</body>
+</html>

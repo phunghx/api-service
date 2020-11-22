@@ -1,0 +1,47 @@
+{
+  "id": "81a58e2c-4ec3-4d34-9413-70c62b3fd476",
+  "parentId": "8c448c53-7d8c-4013-863f-68e801b39106",
+  "rootParentId": "8c448c53-7d8c-4013-863f-68e801b39106",
+  "name": "kiki.review.dont_known_question",
+  "auto": true,
+  "contexts": [
+    "review"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "kiki.review.dont_known_question",
+      "affectedContexts": [
+        {
+          "name": "review",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "examination_data",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

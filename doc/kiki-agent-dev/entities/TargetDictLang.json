@@ -1,0 +1,9 @@
+{
+  "id": "fd220fa1-7fee-484b-a2b9-72e8326b2554",
+  "name": "TargetDictLang",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

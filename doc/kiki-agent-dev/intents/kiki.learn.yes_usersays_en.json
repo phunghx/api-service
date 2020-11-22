@@ -1,0 +1,65 @@
+[
+  {
+    "id": "06df63d7-7339-4f10-afe6-95bd58f98867",
+    "data": [
+      {
+        "text": "Learn",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5fc348d1-0ce0-4b69-a8d7-52db2a64d055",
+    "data": [
+      {
+        "text": "Learn ",
+        "userDefined": false
+      },
+      {
+        "text": "it",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "69141a1f-449c-4ec4-b4e6-31bfbfe3f9f9",
+    "data": [
+      {
+        "text": "Learn ",
+        "userDefined": false
+      },
+      {
+        "text": "this word",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "09af7281-3623-44c4-981a-15838918bdd1",
+    "data": [
+      {
+        "text": "Yes, learn ",
+        "userDefined": false
+      },
+      {
+        "text": "this word",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

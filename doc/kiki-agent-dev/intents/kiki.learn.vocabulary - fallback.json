@@ -1,0 +1,51 @@
+{
+  "id": "1cc72546-c4ae-4b3f-94ce-91ddc2fc08c7",
+  "parentId": "6eb44f4e-0070-488e-a03d-e8710ca7f682",
+  "rootParentId": "6eb44f4e-0070-488e-a03d-e8710ca7f682",
+  "name": "kiki.learn.vocabulary - fallback",
+  "auto": false,
+  "contexts": [
+    "learn_vocabulary",
+    "kikilearnvocabulary-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "kikilearnvocabulary.kikilearnvocabulary-fallback",
+      "affectedContexts": [
+        {
+          "name": "learn_vocabulary",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "kikilearnvocabulary-followup",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Please try again",
+            "I don\u0027t understand."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

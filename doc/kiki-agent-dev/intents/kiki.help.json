@@ -1,0 +1,31 @@
+{
+  "id": "cef1b1c2-2b75-42cc-9b46-dc35d3d9d9d3",
+  "name": "kiki.help",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "Here is something you can ask me:\n1. REVIEW\n      + type: `review cards`\n2. LEARN NEW VOCABULARY\n      + type: `what is __` (E.g: What is pronunciation)\n3. READING NEWS"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

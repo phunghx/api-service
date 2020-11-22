@@ -1,0 +1,48 @@
+{
+  "id": "4ca9f8e6-e612-4d0c-a552-b127837922f0",
+  "parentId": "6eb44f4e-0070-488e-a03d-e8710ca7f682",
+  "rootParentId": "6eb44f4e-0070-488e-a03d-e8710ca7f682",
+  "name": "kiki.learn.stop",
+  "auto": true,
+  "contexts": [
+    "learn_vocabulary",
+    "kikilearnvocabulary-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "kiki.learn.stop",
+      "affectedContexts": [
+        {
+          "name": "learn_vocabulary",
+          "parameters": {},
+          "lifespan": 0
+        },
+        {
+          "name": "kikilearnvocabulary-followup",
+          "parameters": {},
+          "lifespan": 0
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

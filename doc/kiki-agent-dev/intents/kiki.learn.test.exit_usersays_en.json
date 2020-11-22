@@ -1,0 +1,62 @@
+[
+  {
+    "id": "fb7476d8-f8ae-43d4-a566-0ac197f073a5",
+    "data": [
+      {
+        "text": "exit learning",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "dcdffcf8-b4da-4bf6-b84c-5cd51de77184",
+    "data": [
+      {
+        "text": "exit this",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7c18bdc9-b781-437a-89c9-aee76c7a1d0c",
+    "data": [
+      {
+        "text": "stop this process",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "101e589f-475a-4968-8bff-c9a71dd9f8f1",
+    "data": [
+      {
+        "text": "stop",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "88dcf536-93b2-43f4-bb8a-df57a23e6905",
+    "data": [
+      {
+        "text": "exit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

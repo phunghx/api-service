@@ -1,0 +1,102 @@
+{
+  "id": "9939ef68-0fb6-47d3-8655-70ea2af1c11c",
+  "name": "jokes.get",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "jokes.get",
+      "affectedContexts": [
+        {
+          "name": "jokesget-followup",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "lang": "en",
+          "condition": "",
+          "suggestions": [
+            {
+              "title": "Cool"
+            },
+            {
+              "title": "Not funny"
+            },
+            {
+              "title": "More jokes"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Lightning doesn\u0027t mean to shock people, it just doesn\u0027t know how to conduct itself.",
+            "Knowledge is knowing a tomato is a fruit. Wisdom is not putting it in a fruit salad.",
+            "The only substitute for good manners is fast reflexes.",
+            "Reading whilst sunbathing makes you well red.",
+            "Evening news is where they begin with \u0027Good evening\u0027, and then proceed to tell you why it isn\u0027t.",
+            "A bus station is where a bus stops. A train station is where a train stops. On my desk, I have a work station.",
+            "Did you know that dolphins are so smart that within a few weeks of captivity, they can train people to stand on the very edge of the pool and throw them fish?",
+            "A bank is a place that will lend you money, if you can prove that you don\u0027t need it.",
+            "A clear conscience is usually the sign of a bad memory.",
+            "My first job was working in an orange juice factory, but I got canned because I couldn\u0027t concentrate.",
+            "Worrying works! 90% of the things I worry about never happen.",
+            "A bus is a vehicle that runs twice as fast when you are after it as when you are in it.",
+            "Always remember that you are unique; just like everyone else.",
+            "Can\u0027t stand it when a sentence doesn\u0027t end the way you think it OCTOPUS!",
+            "I was going to donate blood until the lady got all personal and started asking \"Who\u0027s blood is this?\" and \"How did you get it?\"",
+            "If swimming is so good for your figure, how do you explain whales?",
+            "I don\u0027t have a big ego. I\u0027m way too cool for that.",
+            "Why couldn\u0027t the bicycle stand? Because it was two tired.",
+            "On a Facebook page for beginning artists, one asked, “Any suggestions for painting dogs?” Another responded,  “Wait till they’re asleep.",
+            "Q: What’s the first thing you should do if a bull charges you?\nA: Pay him!",
+            "Q: What does a dolphin say when he’s confused?\nA: Can you please be more Pacific?",
+            "Patient: “Doctor, I get heartburn every time I eat birthday cake.”\n Doctor: “Next time, take off the candles.”",
+            "Q: What do you always get on your birthday?\nA: Another year older!",
+            "Q: Why do we put candles on top of birthday cakes?\nA: Because it’s too hard to put them on the bottom!",
+            "Q: What sort of birthday cake do ghosts prefer?\nA; An “I scream” cake.",
+            "Happy Birthday!\nForget about the past, you can’t change it.\nForget about the future, you can’t predict it.\nForget about the present, I didn’t get you one!",
+            "Q: What goes up and never comes down?\nA: Your age.",
+            "If you feel a bit lonely, forgotten, or just need someone to cheer you up remember…You can always change your birthday on Facebook!",
+            "The best way to remember your wife’s birthday is to forget it once.",
+            "A family of mice was hiding from a big cat. Suddenly the father mouse started barking like a dog and the cat ran away.\n\"What was that Father?\" asked Baby Mouse. \nWell, son, that\u0027s why it\u0027s important to learn a second language.\""
+          ]
+        },
+        {
+          "type": 4,
+          "lang": "en",
+          "condition": "",
+          "payload": {
+            "suggestions": [
+              {
+                "type": "postback",
+                "title": "more",
+                "value": "more"
+              }
+            ]
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "google": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

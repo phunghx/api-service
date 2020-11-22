@@ -1,0 +1,74 @@
+{
+  "id": "c163a4b7-b8ec-43af-ae1e-cb5daec0bbf4",
+  "name": "kiki.dictionary.search",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "kiki.dictionary.search",
+      "affectedContexts": [
+        {
+          "name": "dictionary_search",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "kikidictionarysearch-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "0608eefe-b295-4f33-b599-ad514e6f217b",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "word",
+          "value": "$word",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "53d519e9-907d-4386-9e29-13039cece21e",
+          "required": false,
+          "dataType": "@TargetDictLang",
+          "name": "target_lang",
+          "value": "$target_lang",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Tell me in what language you want to know its meaning?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "You are searching for the word: \"$word\""
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

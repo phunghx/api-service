@@ -1,0 +1,26 @@
+[
+  {
+    "id": "c933e495-5f8a-49ea-b079-f854a52eff0f",
+    "data": [
+      {
+        "text": "No, I don\u0027t know this question",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2778ddfe-cfb7-4f32-ac55-ef736126a221",
+    "data": [
+      {
+        "text": "No",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

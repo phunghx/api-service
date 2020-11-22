@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kiki-agent-dev-lfhvco",
+  "private_key_id": "3788bf8c4cf8db7045ec7b10d5e9b497e7bb4bfa",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCr88rAwGp8S3Ib\nCzb13p2wJy0JMRLqNrxzwKNHrE2i8CaonD6wX8gteLgLW5JYs1dW3zcWqluX5Q+u\n6gAcGojBVBJyIbiTwsuGLKRjOvhxs4XYi0e2z7AKM/3VkMpEqkDUCqp4dGs7MmcF\nGSwbsggTAjHFlh4BW7BNXcYmJhysehXf9H15PliV6F20F3mTi54Ehs+T4sQ6GfZI\ntxF83GNDCj7DgcLIHcjvtY/mAcKEXUIqjSHXHE/VteZR75kSF2JuOHjfLBn5rLm+\n9phidJqB6shZxy4CjMil9zW829+zcOJPD8tYQTNnaF1xhPMMJhz3jvCS0/tdb/N3\nK7dHpy/lAgMBAAECggEABY5kH88CjIT3k+4h1tdcVbkpAwywkBw4AgQt19QL0ixb\nuMO2YYacIPQEpmv4Ekur58+1/P0rkStCqCPsNabvLP1ldzClwTM11l5nlW6YtpEs\nIwTPysAdRRx2+ElXGoQ8gggyMqA4aCTxypVh+nx0jFYG0QalGOV4kJdrdAdz5711\n41/pccp+6yO1RtHiRBEDjZWEifDThplps4a4FKfpfEDPrcZGO28ZVNFT1K4Y7SAG\nfMbLW1qcbnUBb12uE8cUETpJ9qUfLcrsBy6KD14GkRhGIGvR0EDljWCuXvoDbALu\n57gR1mNikJKKlO0BlKB2hlHwz0/JXaB5GcT8U48CZQKBgQDlQb4Z2xAkPoUul+NB\n79E/u1rOb/6kDKLi6TiGUSYT6UGGRa4OgNbU8ZJJEQbgcJRjrR4I+22rgoKm+WnT\nUVjvrHccXuvQs2+kZCsqNsbDt6poLPilXY2dpu/1RG5Ykgm5lJ+XeM5d7Gig3gn4\nxnbcqFKcBty/TdknHiE/Ra3vVwKBgQDAAsZjaXsLKagKLPKa70oRu1yqxVpgzRWv\nNGhOuMn/YjXZqjLNQcHDXZmMI9kKtX9/LHxWnSWUwzXW5OZO57tInFFQyGkq5s5A\nQd0M/Pc50qb7jXuygM5FreJpVOFziy1YMth2JQNCm2JSdfP3IhkXHO4uRoELnZIy\nd/pMbBzhIwKBgQDENcIXqu9jtcaSnBg6ZJ/4JceQCzYq/U2jWuuvuWAXhnk4DAbu\nDsLPOXlz44i5KmE19gJQua+hLG/ZrHkwDN1LM5Y1x9+XnRsd3UU8OelftJ+5zVN5\nZFpB5ZBVoB243DRKirMUFqa4qA7cL2zlaCZur/kT5KOlb2E9I4Jc/qvgvQKBgASB\njCpVFWAjsB/dAiyEpRZZcUlIrGBNL88WycPfLk5h/aWICv0qJ+Pv1GSnirZnoABa\nCOj3cyRUmHTcllMPuSNxF69vpJgvJnP3l7pwTVT8DpMktNxxjWWxOPkD1u6hO4Uw\nXEgZgkQT5XDN99W65R/Xu/c2DF07a2znx+X3O45FAoGBAJ2Fuxfnh6dmoZNfy4vN\nbNusPYcVyOEOLzkPADA2KGWn3VwYa7hwd+4xZzq+TreUdn49h7cBv4dYVQ0gQtN6\nRk1cZTJV3SQ+mAWXqRg052Tgx0YacNR3xzRlf1QgC5Wq9ObGgrS87ZEr8Bq1v/vd\nisK7MJ7zm6wnyWefSRFuyblp\n-----END PRIVATE KEY-----\n",
+  "client_email": "kiki-agent-dev-2@kiki-agent-dev-lfhvco.iam.gserviceaccount.com",
+  "client_id": "114887648205490600504",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/kiki-agent-dev-2%40kiki-agent-dev-lfhvco.iam.gserviceaccount.com"
+}

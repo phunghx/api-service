@@ -1,0 +1,50 @@
+[
+  {
+    "id": "0ac6485a-369d-4436-bf5b-4986cf8938c8",
+    "data": [
+      {
+        "text": "No",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e1e5a3f9-a59d-4250-94ff-586346096a8d",
+    "data": [
+      {
+        "text": "No, I don\u0027t know",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "54e9cbff-7d2f-4bbb-bb91-6aaa09e3262c",
+    "data": [
+      {
+        "text": "No, I don\u0027t know this question.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cb6a74f8-20ee-4f01-865a-710c191231ee",
+    "data": [
+      {
+        "text": "No, I don\u0027t know this question",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

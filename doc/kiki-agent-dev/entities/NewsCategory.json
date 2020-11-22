@@ -1,0 +1,9 @@
+{
+  "id": "3c888acc-981c-4613-89ed-f6bedad63794",
+  "name": "NewsCategory",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}
