@@ -1,11 +1,11 @@
 Discovery starting.
-Discovery completed in 9 seconds, 939 milliseconds.
+Discovery completed in 7 seconds, 592 milliseconds.
 Run starting. Expected test count is: 4
 ChatBotServiceTest:
 SearchDictFlowTest:
-- Search dictionary conversation (4 seconds, 469 milliseconds)
+- Search dictionary conversation (3 seconds, 849 milliseconds)
 AnalyticsTest:
-xed.api_service.service.AnalyticsTest *** ABORTED *** (0 milliseconds)
+xed.api_service.service.AnalyticsTest *** ABORTED *** (1 millisecond)
   java.lang.RuntimeException: Unable to load a Suite class that was discovered in the runpath: xed.api_service.service.AnalyticsTest
   at org.scalatest.tools.DiscoverySuite$.getSuiteInstance(DiscoverySuite.scala:81)
   at org.scalatest.tools.DiscoverySuite$$anonfun$1.apply(DiscoverySuite.scala:38)
@@ -129,7 +129,7 @@ xed.api_service.service.AuthenServiceTest *** ABORTED *** (0 milliseconds)
   at org.scalatest.tools.Runner$.main(Runner.scala:827)
   at org.scalatest.tools.Runner.main(Runner.scala)
 ChallengeFlowTest:
-- Create Challenge Phrasal Verb A *** FAILED *** (33 milliseconds)
+- Create Challenge Phrasal Verb A *** FAILED *** (13 milliseconds)
   org.nutz.ssdb4j.spi.SSDBException: org.nutz.ssdb4j.spi.SSDBException: java.net.ConnectException: Connection refused (Connection refused)
   at org.nutz.ssdb4j.pool.PoolSSDBStream.req(PoolSSDBStream.java:34)
   at org.nutz.ssdb4j.impl.SimpleClient.req(SimpleClient.java:49)
@@ -182,10 +182,10 @@ ChallengeFlowTest:
   at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
   at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
   at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-- Join Challenge (1 millisecond)
+- Join Challenge (0 milliseconds)
 LearnFlowTest:
-- Learn flow (1 second, 785 milliseconds)
-Run completed in 17 seconds, 155 milliseconds.
+- Learn flow (1 second, 956 milliseconds)
+Run completed in 14 seconds, 13 milliseconds.
 Total number of tests run: 4
 Suites: completed 5, aborted 2
 Tests: succeeded 3, failed 1, canceled 0, ignored 0, pending 0

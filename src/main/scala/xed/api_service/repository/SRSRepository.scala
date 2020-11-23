@@ -13,7 +13,6 @@ import xed.api_service.domain.request.{RangeQuery, SearchRequest, SortQuery, Ter
 import xed.api_service.domain.{ReviewInfo, SRSStatus}
 import xed.api_service.repository.ESRepository.ZActionRequestBuilder
 import xed.api_service.util.TimeUtils
-import xed.chatbot.domain.leaderboard.LeaderBoardItem
 import xed.userprofile.SignedInUser
 
 import scala.collection.JavaConversions._
@@ -170,34 +169,6 @@ case class SRSRepository(client: TransportClient,
     genericSearch(searchRequest).map(_.total)
   }
 
-  def getTopByNewCard(beginTime: Long, endTime: Long, size: Int = 100): Future[Seq[LeaderBoardItem]] = {
-
-    prepareSearch.setTypes(esType)
-      .setQuery(QueryBuilders.boolQuery()
-        .must(QueryBuilders.rangeQuery("created_time").gte(beginTime).lt(endTime))
-        .mustNot(QueryBuilders.termQuery("status", SRSStatus.Ignored))
-      ).addAggregation(
-        AggregationBuilders.terms("users")
-          .field("username")
-          .size(size)
-          .order(Terms.Order.count(false))
-      ).setSize(0)
-      .asyncGet().map(r => {
-      val agg = r.getAggregations.get[StringTerms]("users")
-
-      agg.getBuckets.zipWithIndex.map({ case (bucket, index) => {
-        val username = bucket.getKeyAsString
-        val cardCount = bucket.getDocCount
-
-        LeaderBoardItem(
-          username = username,
-          point = cardCount.toInt,
-          rank = index + 1,
-          userProfile = None
-        )
-      }})
-    })
-  }
 
   def getLearningCardStats(username: String, dayInterval: Int, fromTime: Long, toTime: Long): Future[LineData] = {
     getCardReport(username,dayInterval,fromTime,toTime)

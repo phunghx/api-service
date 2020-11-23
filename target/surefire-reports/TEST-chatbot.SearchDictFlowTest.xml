@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuite 
-errors="0" failures="0" hostname="FakeMacbook" name="chatbot.SearchDictFlowTest" tests="1" time="4.715" timestamp="2020-11-22T11:08:40">
+errors="0" failures="0" hostname="FakeMacbook" name="chatbot.SearchDictFlowTest" tests="1" time="4.035" timestamp="2020-11-23T13:05:18">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property 
@@ -83,7 +83,7 @@ errors="0" failures="0" hostname="FakeMacbook" name="chatbot.SearchDictFlowTest"
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase 
-  name="Search dictionary conversation" classname="chatbot.SearchDictFlowTest" time="4.476">
+  name="Search dictionary conversation" classname="chatbot.SearchDictFlowTest" time="3.851">
 </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

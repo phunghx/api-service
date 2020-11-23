@@ -12,7 +12,6 @@ import xed.api_service.controller.http.filter.{InjectAuthenFilter, LoggedInUserF
 import xed.api_service.module._
 import xed.api_service.service.Analytics
 import xed.api_service.util.ZConfig
-import xed.chatbot.controllers.http.{BotAdminController, BotController, InboxController}
 import xed.profiler.controller.http.ProfilerController
 
 object MainApp extends Server
@@ -42,11 +41,7 @@ class Server extends HttpServer {
   override protected def disableAdminHttpServer: Boolean = ZConfig.getBoolean("server.admin.disable", true)
 
   override def modules: Seq[Module] = Seq(XedApiModule,
-    PublicPathConfigModule,
-    BotServiceModule,
-    BotProcessorModule,
-    ChallengeModule,
-    HandlerModule)
+    PublicPathConfigModule)
 
   override def messageBodyModule = com.twitter.finatra.XedMessageBodyModule
 
@@ -61,15 +56,7 @@ class Server extends HttpServer {
       .add[DeckController]
       .add[LoggedInUserFilter,CardController]
       .add[LoggedInUserFilter,ReviewController]
-      .add[LoggedInUserFilter,XJourneyController]
-      .add[LoggedInUserFilter,AlertController]
       .add[LoggedInUserFilter,StatisticController]
-      .add[LoggedInUserFilter,BotController]
-      .add[LoggedInUserFilter,InboxController]
-      .add[BotAdminController]
-      .add[LoggedInUserFilter, CourseController]
-      .add[ChallengeController]
-      .add[ChallengeTemplateController]
       .add[Resources]
 
 

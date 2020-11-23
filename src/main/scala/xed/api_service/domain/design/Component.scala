@@ -7,7 +7,6 @@ import com.fasterxml.jackson.databind.{DeserializationContext, JsonDeserializer,
 import xed.api_service.domain.design
 import xed.api_service.domain.design.v100.{FillInBlank, MultiChoice, MultiSelect}
 import xed.api_service.util.JsonUtils
-import xed.chatbot.domain.{PostBackUAction, ShareChallengeUAction, UserAction}
 
 object ComponentType {
   val Text = "text"
@@ -96,26 +95,3 @@ class ComponentDeserializer extends JsonDeserializer[Component] {
     }
   }
 }
-
-class BotActionDeserializer extends JsonDeserializer[UserAction] {
-
-  override def deserialize(p: JsonParser, ctx: DeserializationContext): UserAction = {
-    val rootNode = p.getCodec.readTree[JsonNode](p)
-
-    if (rootNode.isMissingNode) return null
-
-    val componentType = rootNode.path("type").asText()
-
-    buildUserAction(componentType,rootNode)
-
-  }
-
-  private def buildUserAction(`type`: String, rootNode: JsonNode) : UserAction = {
-    `type` match {
-      case UserAction.PostBack => JsonUtils.fromJson[PostBackUAction](rootNode.toString)
-      case UserAction.ShareChallenge => JsonUtils.fromJson[ShareChallengeUAction](rootNode.toString)
-      case _ => null
-    }
-  }
-}
-

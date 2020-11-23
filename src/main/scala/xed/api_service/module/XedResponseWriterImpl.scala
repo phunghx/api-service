@@ -22,8 +22,6 @@ case class BaseResponse(success: Boolean,
 class XedResponseWriterImpl @Inject()(mapper: FinatraObjectMapper,
                                       fileResolver: FileResolver) extends DefaultMessageBodyWriter with Logging {
 
-  mapper.registerModule(CustomJsonModule)
-
   override def write(obj: Any): WriterResponse = {
     if (isPrimitiveOrWrapper(obj.getClass)) {
       marshalling.WriterResponse(JSON_UTF_8, mapper.writeValueAsString(BaseResponse(success = true,

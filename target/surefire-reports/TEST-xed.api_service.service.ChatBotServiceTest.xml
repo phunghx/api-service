@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuite 
-errors="0" failures="0" hostname="FakeMacbook" name="xed.api_service.service.ChatBotServiceTest" tests="0" time="0.011" timestamp="2020-11-22T11:08:40">
+errors="0" failures="0" hostname="FakeMacbook" name="xed.api_service.service.ChatBotServiceTest" tests="0" time="0.014" timestamp="2020-11-23T13:05:18">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property 
