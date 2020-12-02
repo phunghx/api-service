@@ -26,21 +26,19 @@ import xed.api_service.util.{JsonUtils, ZConfig}
 
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
+
 case class DeckData(username: String,
                     cardIds: ListBuffer[String])
+
 class SSDBTool extends IntegrationTest {
 
 
-  override protected def injector: Injector =  Injector(Guice.createInjector(
+  override protected def injector: Injector = Injector(Guice.createInjector(
     XedApiModule,
-    PublicPathConfigModule,
-    BotServiceModule,
-    BotProcessorModule,
-    ChallengeModule,
-    HandlerModule
+    PublicPathConfigModule
   ))
 
-val cardKey = ZConfig.getString("es_client.ssdb_card_hashmap_name")
+  val cardKey = ZConfig.getString("es_client.ssdb_card_hashmap_name")
   val ssdb = SSDBs.pool(
     "34.87.143.227",
     8888,
@@ -48,13 +46,13 @@ val cardKey = ZConfig.getString("es_client.ssdb_card_hashmap_name")
     null)
 
   val cardRepo = SSDBCardRepository(
-    ssdb =  ssdb,
+    ssdb = ssdb,
     cardKey
   )
 
   val deckRepository = injector.instance[DeckRepository]
 
-  private val client =  createClient(clusterName = "xed_live_cluster", servers = Seq("34.87.143.227:9300"))
+  private val client = createClient(clusterName = "xed_live_cluster", servers = Seq("34.87.143.227:9300"))
 
 
   def rebuildMissingDeck(): Unit = {
@@ -103,7 +101,7 @@ val cardKey = ZConfig.getString("es_client.ssdb_card_hashmap_name")
 
     val finalDecks = createMissingDeckInfo(deckMap, cardMap)
     FileUtils.writeStringToFile(new File("./data/recovered_decks.json"), JsonUtils.toJson(finalDecks))
-    val totalRecoveredDecksSuccess = finalDecks.grouped(50).map(decks =>{
+    val totalRecoveredDecksSuccess = finalDecks.grouped(50).map(decks => {
       deckRepository.multiInsert(decks, false).sync().size
     }).sum
 
@@ -117,8 +115,7 @@ val cardKey = ZConfig.getString("es_client.ssdb_card_hashmap_name")
   }
 
 
-
-  def createMissingDeckInfo(deckMap: mutable.Map[String, DeckData], cardMap: mutable.Map[String, Card]) : Seq[Deck] = {
+  def createMissingDeckInfo(deckMap: mutable.Map[String, DeckData], cardMap: mutable.Map[String, Card]): Seq[Deck] = {
 
     val finalDecks = deckMap.map(entry => {
       //Sort cards by created_time
@@ -135,18 +132,18 @@ val cardKey = ZConfig.getString("es_client.ssdb_card_hashmap_name")
         thumbnail = None,
         description = None,
         design = None,
-        cards = Some(ListBuffer(sortedCardIds:_*)),
+        cards = Some(ListBuffer(sortedCardIds: _*)),
         deckStatus = Option(Status.PROTECTED.id),
         updatedTime = Some(System.currentTimeMillis()),
         createdTime = Some(System.currentTimeMillis())
       )
     }).groupBy(_.username.get)
-      .flatMap(entry =>{
+      .flatMap(entry => {
         val username = entry._1
         val decks = entry._2
 
-        decks.zipWithIndex.map(e =>{
-          e._1.copy(name = Some(s"Deck ${e._2+1}"))
+        decks.zipWithIndex.map(e => {
+          e._1.copy(name = Some(s"Deck ${e._2 + 1}"))
         })
       })
 
@@ -156,19 +153,19 @@ val cardKey = ZConfig.getString("es_client.ssdb_card_hashmap_name")
 
 
   private def searchCardScroll(client: TransportClient,
-                           index: String,
-                           fn:Seq[SearchHit] => Unit,
-                           size: Int = 50): Boolean = {
+                               index: String,
+                               fn: Seq[SearchHit] => Unit,
+                               size: Int = 50): Boolean = {
 
-    def recursiveSearch(r: SearchResponse, fn:Seq[SearchHit] => Unit ): Future[Boolean] = {
+    def recursiveSearch(r: SearchResponse, fn: Seq[SearchHit] => Unit): Future[Boolean] = {
       val data = r.getHits.getHits
 
       fn(data)
-      if(data.nonEmpty && r.getScrollId!= null) {
+      if (data.nonEmpty && r.getScrollId != null) {
         client.prepareSearchScroll(r.getScrollId)
           .setScroll(TimeValue.timeValueMinutes(1L))
           .asyncGet()
-          .flatMap(recursiveSearch(_,fn))
+          .flatMap(recursiveSearch(_, fn))
 
       } else {
         Future.value(true)
@@ -176,7 +173,7 @@ val cardKey = ZConfig.getString("es_client.ssdb_card_hashmap_name")
     }
 
 
-    val f =  client.prepareSearch(index)
+    val f = client.prepareSearch(index)
       .setTypes("card")
       .setQuery(QueryBuilders.matchAllQuery())
       .setScroll(TimeValue.timeValueMinutes(1L))

@@ -1,0 +1,111 @@
+18:58:24,544 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+18:58:24,544 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+18:58:24,544 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/home/cooky/documents/tf/api-service/dist/api-service.jar!/logback.xml]
+18:58:24,556 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@7d8995e - URL [jar:file:/home/cooky/documents/tf/api-service/dist/api-service.jar!/logback.xml] is not of type file
+18:58:24,677 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+18:58:24,680 |-INFO in ch.qos.logback.core.joran.action.ShutdownHookAction - About to instantiate shutdown hook of type [ch.qos.logback.core.hook.DelayingShutdownHook]
+18:58:24,682 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Adding LoggerContextListener of type [ch.qos.logback.classic.jul.LevelChangePropagator] to the object stack
+18:58:24,692 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@130d63be - Propagating DEBUG level on Logger[ROOT] onto the JUL framework
+18:58:24,692 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Starting LoggerContextListener
+18:58:24,692 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+18:58:24,694 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+18:58:24,730 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+18:58:24,730 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+18:58:24,730 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+18:58:24,730 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+18:58:24,732 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [SERVICE]
+18:58:24,739 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@42a48628 - No compression will be used
+18:58:24,742 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+18:58:24,743 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[SERVICE] - Active log file name: logs/service.log
+18:58:24,743 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[SERVICE] - File property is set to [logs/service.log]
+18:58:24,744 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+18:58:24,744 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [ACCESS]
+18:58:24,745 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@293a5bf6 - No compression will be used
+18:58:24,745 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+18:58:24,745 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ACCESS] - Active log file name: logs/access.log
+18:58:24,745 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ACCESS] - File property is set to [logs/access.log]
+18:58:24,745 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+18:58:24,745 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [COMMON_EXCEPTION]
+18:58:24,746 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@6aeb35e6 - No compression will be used
+18:58:24,746 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+18:58:24,747 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[COMMON_EXCEPTION] - Active log file name: logs/common_exception.log
+18:58:24,747 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[COMMON_EXCEPTION] - File property is set to [logs/common_exception.log]
+18:58:24,748 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.classic.AsyncAppender]
+18:58:24,749 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [ASYNC-SERVICE]
+18:58:24,750 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [SERVICE] to ch.qos.logback.classic.AsyncAppender[ASYNC-SERVICE]
+18:58:24,750 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC-SERVICE] - Attaching appender named [SERVICE] to AsyncAppender.
+18:58:24,751 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC-SERVICE] - Setting discardingThreshold to 204
+18:58:24,751 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.classic.AsyncAppender]
+18:58:24,751 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [ASYNC-COMMON_EXCEPTION]
+18:58:24,751 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [COMMON_EXCEPTION] to ch.qos.logback.classic.AsyncAppender[ASYNC-COMMON_EXCEPTION]
+18:58:24,751 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC-COMMON_EXCEPTION] - Attaching appender named [COMMON_EXCEPTION] to AsyncAppender.
+18:58:24,751 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC-COMMON_EXCEPTION] - Setting discardingThreshold to 204
+18:58:24,752 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.classic.AsyncAppender]
+18:58:24,752 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [ASYNC-ACCESS]
+18:58:24,752 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [ACCESS] to ch.qos.logback.classic.AsyncAppender[ASYNC-ACCESS]
+18:58:24,752 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC-ACCESS] - Attaching appender named [ACCESS] to AsyncAppender.
+18:58:24,752 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC-ACCESS] - Setting discardingThreshold to 204
+18:58:24,752 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+18:58:24,752 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@130d63be - Propagating INFO level on Logger[ROOT] onto the JUL framework
+18:58:24,752 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [ASYNC-SERVICE] to Logger[ROOT]
+18:58:24,752 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+18:58:24,753 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.twitter.finatra.http.filters.AccessLoggingFilter] to INFO
+18:58:24,753 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@130d63be - Propagating INFO level on Logger[com.twitter.finatra.http.filters.AccessLoggingFilter] onto the JUL framework
+18:58:24,753 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [com.twitter.finatra.http.filters.AccessLoggingFilter] to false
+18:58:24,753 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [ASYNC-ACCESS] to Logger[com.twitter.finatra.http.filters.AccessLoggingFilter]
+18:58:24,753 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [CommonExceptionMapping] to WARN
+18:58:24,753 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@130d63be - Propagating WARN level on Logger[CommonExceptionMapping] onto the JUL framework
+18:58:24,753 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [CommonExceptionMapping] to false
+18:58:24,753 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [ASYNC-COMMON_EXCEPTION] to Logger[CommonExceptionMapping]
+18:58:24,753 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+18:58:24,754 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@1283bb96 - Registering current configuration as safe fallback point
+
+2020-11-24 18:58:24 [main] INFO  c.t.util.logging.Slf4jBridgeUtility$ - org.slf4j.bridge.SLF4JBridgeHandler installed.
+2020-11-24 18:58:25 [main] INFO  com.twitter.finagle.http.HttpMuxer$ - HttpMuxer[/admin/metrics.json] = com.twitter.finagle.stats.MetricsExporter(<function1>)
+2020-11-24 18:58:25 [main] INFO  com.twitter.finagle.http.HttpMuxer$ - HttpMuxer[/admin/per_host_metrics.json] = com.twitter.finagle.stats.HostMetricsExporter(<function1>)
+2020-11-24 18:58:25 [main] INFO  xed.api_service.MainApp$ - Process started
+Loading app mode:
+ - From properties: development
+ - From ENV: null
+Use mode: development
+Flag local.doc.root already defined!
+Flag doc.root already defined!
+2020-11-24 18:58:25 [main] INFO  xed.api_service.MainApp$ - Serving admin http on 0.0.0.0/0.0.0.0:9990
+2020-11-24 18:58:26 [main] INFO  com.twitter.finagle - Finagle version 18.4.0 (rev=82da7ddebf5de885f2adaf556d91ef39c2ffe937) built at 20180410-151513
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) No implementation for xed.api_service.service.statistic.CountService was bound.
+  while locating xed.api_service.service.statistic.CountService
+    for parameter 0 at xed.api_service.service.SimpleAlertService.<init>(AlertService.scala:21)
+  at xed.api_service.module.XedApiModule$.configure(XedModule.scala:83) (via modules: com.google.inject.util.Modules$OverrideModule -> xed.api_service.module.XedApiModule$)
+
+2) No implementation for xed.api_service.service.statistic.CountService was bound.
+  at xed.api_service.module.XedApiModule$.providesDeckEventPublisher(XedModule.scala:150) (via modules: com.google.inject.util.Modules$OverrideModule -> xed.api_service.module.XedApiModule$)
+
+2 errors
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:466)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:155)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:107)
+	at com.google.inject.Guice.createInjector(Guice.java:96)
+	at com.google.inject.Guice.createInjector(Guice.java:84)
+	at com.twitter.inject.app.internal.InstalledModules$.create(InstalledModules.scala:37)
+	at com.twitter.inject.app.App$class.loadModules(App.scala:137)
+	at xed.api_service.Server.loadModules(Server.scala:37)
+	at com.twitter.inject.app.App$class.main(App.scala:52)
+	at xed.api_service.Server.com$twitter$inject$server$TwitterServer$$super$main(Server.scala:37)
+	at com.twitter.inject.server.TwitterServer$class.main(TwitterServer.scala:160)
+	at xed.api_service.Server.main(Server.scala:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.twitter.app.App$$anonfun$nonExitingMain$4.apply(App.scala:342)
+	at com.twitter.app.App$$anonfun$nonExitingMain$4.apply(App.scala:341)
+	at scala.Option.foreach(Option.scala:257)
+	at com.twitter.app.App$class.nonExitingMain(App.scala:341)
+	at xed.api_service.Server.nonExitingMain(Server.scala:37)
+	at com.twitter.app.App$class.main(App.scala:304)
+	at xed.api_service.Server.main(Server.scala:37)
+	at xed.api_service.MainApp.main(Server.scala)
+Exception thrown in main on startup
+

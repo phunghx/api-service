@@ -1358,3 +1358,9 @@ Caused by: java.net.SocketException: Socket closed
 	at java.net.Socket.connect(Socket.java:607)
 	at org.nutz.ssdb4j.impl.SocketSSDBStream.beforeExec(SocketSSDBStream.java:37)
 	... 46 common frames omitted
+2020-11-24 18:58:24,759 INF                  Slf4jBridgeUtility$       org.slf4j.bridge.SLF4JBridgeHandler installed.
+2020-11-24 18:58:25,440 INF                  HttpMuxer$                HttpMuxer[/admin/metrics.json] = com.twitter.finagle.stats.MetricsExporter(<function1>)
+2020-11-24 18:58:25,441 INF                  HttpMuxer$                HttpMuxer[/admin/per_host_metrics.json] = com.twitter.finagle.stats.HostMetricsExporter(<function1>)
+2020-11-24 18:58:25,460 INF                  MainApp$                  Process started
+2020-11-24 18:58:25,831 INF                  MainApp$                  Serving admin http on 0.0.0.0/0.0.0.0:9990
+2020-11-24 18:58:26,276 INF                  finagle                   Finagle version 18.4.0 (rev=82da7ddebf5de885f2adaf556d91ef39c2ffe937) built at 20180410-151513
