@@ -78,6 +78,7 @@ object XedApiModule extends XedModule {
 
     bind[CardService].to[CardServiceImpl].asEagerSingleton()
 
+    bind[CountService].to[CountServiceImpl].asEagerSingleton()
     bind[HistoryService].to[HistoryServiceImpl].asEagerSingleton()
     bind[StatisticService].to[StatisticServiceImpl].asEagerSingleton()
     bind[AlertService].to[SimpleAlertService].asEagerSingleton()
