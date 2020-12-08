@@ -1364,3 +1364,136 @@ Caused by: java.net.SocketException: Socket closed
 2020-11-24 18:58:25,460 INF                  MainApp$                  Process started
 2020-11-24 18:58:25,831 INF                  MainApp$                  Serving admin http on 0.0.0.0/0.0.0.0:9990
 2020-11-24 18:58:26,276 INF                  finagle                   Finagle version 18.4.0 (rev=82da7ddebf5de885f2adaf556d91ef39c2ffe937) built at 20180410-151513
+2020-12-06 20:36:19,634 INF                  Slf4jBridgeUtility$       org.slf4j.bridge.SLF4JBridgeHandler installed.
+2020-12-06 20:36:20,443 INF                  HttpMuxer$                HttpMuxer[/admin/metrics.json] = com.twitter.finagle.stats.MetricsExporter(<function1>)
+2020-12-06 20:36:20,444 INF                  HttpMuxer$                HttpMuxer[/admin/per_host_metrics.json] = com.twitter.finagle.stats.HostMetricsExporter(<function1>)
+2020-12-06 20:36:20,462 INF                  MainApp$                  Process started
+2020-12-06 20:36:20,860 INF                  MainApp$                  Serving admin http on 0.0.0.0/0.0.0.0:9990
+2020-12-06 20:36:21,466 INF                  finagle                   Finagle version 18.4.0 (rev=82da7ddebf5de885f2adaf556d91ef39c2ffe937) built at 20180410-151513
+2020-12-06 21:06:50,278 INF                  Slf4jBridgeUtility$       org.slf4j.bridge.SLF4JBridgeHandler installed.
+2020-12-06 21:06:51,041 INF                  HttpMuxer$                HttpMuxer[/admin/metrics.json] = com.twitter.finagle.stats.MetricsExporter(<function1>)
+2020-12-06 21:06:51,043 INF                  HttpMuxer$                HttpMuxer[/admin/per_host_metrics.json] = com.twitter.finagle.stats.HostMetricsExporter(<function1>)
+2020-12-06 21:06:51,068 INF                  MainApp$                  Process started
+2020-12-06 21:06:51,514 INF                  MainApp$                  Serving admin http on 0.0.0.0/0.0.0.0:9990
+2020-12-06 21:06:51,988 INF                  finagle                   Finagle version 18.4.0 (rev=82da7ddebf5de885f2adaf556d91ef39c2ffe937) built at 20180410-151513
+2020-12-06 21:06:52,867 INF                  FileResolver              Local file mode enabled
+2020-12-06 21:06:54,465 INF                  XedApiModule$             Add localhost:9300 to transport address
+2020-12-06 21:06:54,740 INF                  DeckRepository            --> Add type card
+2020-12-06 21:06:54,741 INF                  DeckRepository            --> With mapping {"_all":{"enabled":"false"},"properties":{"card_type":{"type":"integer"},"card_version":{"type":"integer"},"created_time":{"type":"long"},"deck_id":{"type":"keyword"},"design":{"enabled":false,"type":"object"},"id":{"doc_values":false,"index":false,"type":"keyword"},"updated_time":{"type":"long"},"username":{"type":"keyword"}}}
+2020-12-06 21:06:54,834 INF                  DeckRepository            => Mapping merged! Type card with mapping {"_all":{"enabled":"false"},"properties":{"card_type":{"type":"integer"},"card_version":{"type":"integer"},"created_time":{"type":"long"},"deck_id":{"type":"keyword"},"design":{"enabled":false,"type":"object"},"id":{"doc_values":false,"index":false,"type":"keyword"},"updated_time":{"type":"long"},"username":{"type":"keyword"}}}
+2020-12-06 21:06:54,834 INF                  DeckRepository            --> Add type deck
+2020-12-06 21:06:54,834 INF                  DeckRepository            --> With mapping {"_all":{"enabled":"false"},"properties":{"cards":{"type":"keyword"},"category":{"type":"keyword"},"created_time":{"type":"long"},"deck_status":{"type":"integer"},"description":{"fields":{"raw":{"ignore_above":1024,"type":"keyword"}},"type":"text"},"design":{"enabled":false,"type":"object"},"id":{"doc_values":false,"index":false,"type":"keyword"},"name":{"fields":{"raw":{"ignore_above":512,"type":"keyword"}},"type":"text"},"thumbnail":{"doc_values":false,"index":false,"type":"keyword"},"total_likes":{"type":"integer"},"updated_time":{"type":"long"},"username":{"type":"keyword"},"weekly_total_likes":{"type":"integer"}}}
+2020-12-06 21:06:54,866 INF                  DeckRepository            => Mapping merged! Type deck with mapping {"_all":{"enabled":"false"},"properties":{"cards":{"type":"keyword"},"category":{"type":"keyword"},"created_time":{"type":"long"},"deck_status":{"type":"integer"},"description":{"fields":{"raw":{"ignore_above":1024,"type":"keyword"}},"type":"text"},"design":{"enabled":false,"type":"object"},"id":{"doc_values":false,"index":false,"type":"keyword"},"name":{"fields":{"raw":{"ignore_above":512,"type":"keyword"}},"type":"text"},"thumbnail":{"doc_values":false,"index":false,"type":"keyword"},"total_likes":{"type":"integer"},"updated_time":{"type":"long"},"username":{"type":"keyword"},"weekly_total_likes":{"type":"integer"}}}
+2020-12-06 21:06:54,897 INF                  SRSRepository             --> Add type model
+2020-12-06 21:06:54,897 INF                  SRSRepository             --> With mapping {"_all":{"enabled":"false"},"properties":{"card_id":{"type":"keyword"},"created_time":{"type":"long"},"deck_id":{"type":"keyword"},"due_date":{"type":"long"},"id":{"doc_values":false,"index":false,"type":"keyword"},"last_review_time":{"type":"long"},"memorizing_level":{"type":"integer"},"source":{"type":"keyword"},"start_date":{"type":"long"},"status":{"type":"keyword"},"stop_review":{"type":"boolean"},"updated_time":{"type":"long"},"username":{"type":"keyword"}}}
+2020-12-06 21:06:54,926 INF                  SRSRepository             => Mapping merged! Type model with mapping {"_all":{"enabled":"false"},"properties":{"card_id":{"type":"keyword"},"created_time":{"type":"long"},"deck_id":{"type":"keyword"},"due_date":{"type":"long"},"id":{"doc_values":false,"index":false,"type":"keyword"},"last_review_time":{"type":"long"},"memorizing_level":{"type":"integer"},"source":{"type":"keyword"},"start_date":{"type":"long"},"status":{"type":"keyword"},"stop_review":{"type":"boolean"},"updated_time":{"type":"long"},"username":{"type":"keyword"}}}
+2020-12-06 21:06:54,926 INF                  SRSRepository             --> Add type review
+2020-12-06 21:06:54,926 INF                  SRSRepository             --> With mapping {"_all":{"enabled":"false"},"properties":{"answer":{"type":"integer"},"card_id":{"type":"keyword"},"created_time":{"type":"long"},"deck_id":{"type":"keyword"},"duration":{"type":"integer"},"id":{"doc_values":false,"index":false,"type":"keyword"},"memorizing_level":{"type":"integer"},"success":{"type":"boolean"},"username":{"type":"keyword"}}}
+2020-12-06 21:06:54,945 INF                  SRSRepository             => Mapping merged! Type review with mapping {"_all":{"enabled":"false"},"properties":{"answer":{"type":"integer"},"card_id":{"type":"keyword"},"created_time":{"type":"long"},"deck_id":{"type":"keyword"},"duration":{"type":"integer"},"id":{"doc_values":false,"index":false,"type":"keyword"},"memorizing_level":{"type":"integer"},"success":{"type":"boolean"},"username":{"type":"keyword"}}}
+2020-12-06 21:06:55,329 INF                  ReviewHistoryRepository   --> Add type model
+2020-12-06 21:06:55,329 INF                  ReviewHistoryRepository   --> With mapping {"_all":{"enabled":"false"},"properties":{"card_id":{"type":"keyword"},"created_time":{"type":"long"},"deck_id":{"type":"keyword"},"due_date":{"type":"long"},"id":{"doc_values":false,"index":false,"type":"keyword"},"last_review_time":{"type":"long"},"memorizing_level":{"type":"integer"},"source":{"type":"keyword"},"start_date":{"type":"long"},"status":{"type":"keyword"},"stop_review":{"type":"boolean"},"updated_time":{"type":"long"},"username":{"type":"keyword"}}}
+2020-12-06 21:06:55,343 INF                  ReviewHistoryRepository   => Mapping merged! Type model with mapping {"_all":{"enabled":"false"},"properties":{"card_id":{"type":"keyword"},"created_time":{"type":"long"},"deck_id":{"type":"keyword"},"due_date":{"type":"long"},"id":{"doc_values":false,"index":false,"type":"keyword"},"last_review_time":{"type":"long"},"memorizing_level":{"type":"integer"},"source":{"type":"keyword"},"start_date":{"type":"long"},"status":{"type":"keyword"},"stop_review":{"type":"boolean"},"updated_time":{"type":"long"},"username":{"type":"keyword"}}}
+2020-12-06 21:06:55,344 INF                  ReviewHistoryRepository   --> Add type review
+2020-12-06 21:06:55,344 INF                  ReviewHistoryRepository   --> With mapping {"_all":{"enabled":"false"},"properties":{"answer":{"type":"integer"},"card_id":{"type":"keyword"},"created_time":{"type":"long"},"deck_id":{"type":"keyword"},"duration":{"type":"integer"},"id":{"doc_values":false,"index":false,"type":"keyword"},"memorizing_level":{"type":"integer"},"success":{"type":"boolean"},"username":{"type":"keyword"}}}
+2020-12-06 21:06:55,356 INF                  ReviewHistoryRepository   => Mapping merged! Type review with mapping {"_all":{"enabled":"false"},"properties":{"answer":{"type":"integer"},"card_id":{"type":"keyword"},"created_time":{"type":"long"},"deck_id":{"type":"keyword"},"duration":{"type":"integer"},"id":{"doc_values":false,"index":false,"type":"keyword"},"memorizing_level":{"type":"integer"},"success":{"type":"boolean"},"username":{"type":"keyword"}}}
+2020-12-06 21:06:55,776 INF                  MainApp$                  Resolving Finagle clients before warmup
+2020-12-06 21:06:55,779 INF                  finagle                   user-profile-from-api-service resolved to Addr.Bound, current size=1
+2020-12-06 21:06:55,780 INF                  finagle                   auth-caas-service-from-api-service resolved to Addr.Bound, current size=1
+2020-12-06 21:06:55,782 INF                  MainApp$                  Done resolving clients: [user-profile-from-api-service, auth-caas-service-from-api-service].
+2020-12-06 21:06:55,784 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=82da7ddebf5de885f2adaf556d91ef39c2ffe937)
+2020-12-06 21:06:56,088 INF                  MainApp$                  Warming up.
+2020-12-06 21:06:56,173 INF                  MainApp$                  Disabling the Admin HTTP Server since disableAdminHttpServer=true
+2020-12-06 21:06:56,199 INF                  HttpRouter                Adding routes
+GET     /_profiler
+POST    /_profiler/clear_all
+GET     /test/string
+GET     /test/object
+GET     /test/error
+POST    /deck/:deck_id/card
+POST    /deck/add_news_card
+POST    /deck/:deck_id/cards
+POST    /deck/:deck_id/remove_cards
+POST    /deck
+PUT     /deck/:deck_id
+POST    /deck/set_likes
+POST    /deck/set_weekly_likes
+GET     /deck/:deck_id
+POST    /deck/list
+POST    /deck/:deck_id/unpublish
+POST    /deck/:deck_id/publish
+POST    /deck/multi_del
+DELETE  /deck/:deck_id/del
+DELETE  /deck/:deck_id
+GET     /deck/list/new
+GET     /deck/trending
+POST    /deck/search
+POST    /deck/search/me
+GET     /deck/category/list
+PUT     /card/:card_id
+GET     /card/:card_id
+POST    /card/list
+POST    /card/detail/list
+POST    /card/detail/tab
+DELETE  /card/:card_id
+GET     /srs/card/due
+POST    /srs/card/:card_id
+POST    /srs/card
+POST    /srs/card/:card_id/review
+POST    /srs/card/:card_id/learn_again
+POST    /srs/card/:card_id/move_done
+POST    /srs/card/:card_id/ignore
+DELETE  /srs/card/:card_id
+POST    /srs/card/list/delete
+POST    /srs/list
+POST    /srs/card/list
+POST    /srs/search/deck/due
+POST    /srs/search/deck/learning
+POST    /srs/search/deck/done
+POST    /srs/card/search/due
+POST    /srs/card/search/learning
+POST    /srs/card/search/done
+POST    /srs/card/search
+GET     /statistic/cards
+GET     /statistic/card_report
+GET     /statistic/learning_time
+GET     /public/:*
+2020-12-06 21:06:56,246 INF                  MainApp$                  http server started on port: 8864
+2020-12-06 21:06:56,247 INF                  MainApp$                  afterPostWarmup
+2020-12-06 21:06:56,247 INF                  Analytics                 Start Analytics Service Num Thread: 8
+2020-12-06 21:06:56,271 INF                  MainApp$                  xed.api_service.MainApp started.
+2020-12-06 21:06:56,272 INF                  MainApp$                  Startup complete, server awaiting.
+2020-12-06 21:06:56,273 INF                  Awaiter$                  Awaiting 1 awaitables: 
+com.twitter.finagle.server.ListeningStackServer$$anon$1
+2020-12-06 21:07:08,353 ERR                  AuthenServiceImpl         Error in getUserWithSessionId: 70892304-7f4e-4283-be02-7a1e7102a2ba - Session expired or not exist
+2020-12-06 21:07:08,354 ERR                  InjectAuthenFilter        No user was found for the session id = 70892304-7f4e-4283-be02-7a1e7102a2ba
+2020-12-06 21:13:04,437 ERR                  AuthenServiceImpl         Error in getUserWithSessionId: 70892304-7f4e-4283-be02-7a1e7102a2ba - Session expired or not exist
+2020-12-06 21:13:04,438 ERR                  InjectAuthenFilter        No user was found for the session id = 70892304-7f4e-4283-be02-7a1e7102a2ba
+2020-12-06 21:32:48,406 ERR                  InjectAuthenFilter        No user profile was found for the user= up-e3968cfb-d0ea-4f21-829c-36148327421d  with the session id = 758ce1d9-5f38-4012-95f0-d666946d78cb
+com.twitter.finagle.Failure: Connection refused: /127.0.0.1:8392 at remote address: /127.0.0.1:8392. Remote Info: Not Available
+Caused by: com.twitter.finagle.ConnectionFailedException: Connection refused: /127.0.0.1:8392 at remote address: /127.0.0.1:8392. Remote Info: Not Available
+	at com.twitter.finagle.netty4.ConnectionBuilder$$anon$1.operationComplete(ConnectionBuilder.scala:138)
+	at com.twitter.finagle.netty4.ConnectionBuilder$$anon$1.operationComplete(ConnectionBuilder.scala:117)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:507)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:500)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:479)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:420)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:122)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:343)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at com.twitter.finagle.util.BlockingTimeTrackingThreadFactory$$anon$1.run(BlockingTimeTrackingThreadFactory.scala:23)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:8392
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:352)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	... 9 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	... 13 common frames omitted
