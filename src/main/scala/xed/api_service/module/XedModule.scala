@@ -20,11 +20,13 @@ import xed.api_service.repository.card.{CardRepository, SSDBCardRepository}
 import xed.api_service.repository.{SRSRepository, _}
 import xed.api_service.service._
 import xed.api_service.service.bq.{HttpLogService, LogService}
+import xed.api_service.service.course._
 import xed.api_service.service.sendgrid.{SendGridService, SendGridServiceImpl}
 import xed.api_service.service.statistic._
 import xed.api_service.util.ZConfig
 import xed.api_service.util.ZConfig.ZConfigLike
 import xed.caas.service.TCaasService
+import xed.chatbot.repository.CourseLearningRepository
 import xed.notification.{HttpNotificationService, NotificationService}
 import xed.userprofile._
 import xed.userprofile.service.TUserProfileService
@@ -254,6 +256,11 @@ object XedApiModule extends XedModule {
   @Named("es_srs")
   def providesESSRSConfig(): ESConfig = readESConfig("es_srs")
 
+  @Provides
+  @Singleton
+  @Named("es_course")
+  def providesESCourseConfig(): ESConfig = readESConfig("es_course")
+
 
   @Singleton
   @Provides
@@ -313,6 +320,65 @@ object XedApiModule extends XedModule {
     @Named("es_srs") conf: ESConfig): ReviewHistoryRepository = {
     val esType = ZConfig.getString("es_client.review_type")
     ReviewHistoryRepository(client, conf, esType)
+  }
+
+
+  @Singleton
+  @Provides
+  def providesCategoryRepository(@Inject
+  client: TransportClient,
+    @Named("es_course") conf: ESConfig): CategoryRepository =
+    CategoryRepository(client,
+      conf,
+      ZConfig.getString("es_client.category_type")
+    )
+
+  @Singleton
+  @Provides
+  def providesJourneyRepository(@Inject
+  client: TransportClient,
+    @Named("es_course") conf: ESConfig): JourneyRepository =
+    JourneyRepository(client, conf, ZConfig.getString("es_client.journey_type"))
+
+
+  @Singleton
+  @Provides
+  def providesCourseRepository(@Inject
+  client: TransportClient,
+    @Named("es_course") conf: ESConfig): CourseRepository = {
+    val esType = ZConfig.getString("es_client.course_type")
+    CourseRepository(client, conf, esType)
+  }
+
+  @Singleton
+  @Provides
+  def providesCourseService(@Inject
+  repository: CourseRepository,
+    deckRepository: DeckRepository,
+    historyRepository: CourseLearningRepository,
+    userProfileService: UserProfileService
+  ): CourseService = {
+
+    CourseServiceImpl(
+      repository,
+      deckRepository,
+      historyRepository,
+      userProfileService
+    )
+  }
+
+  @Singleton
+  @Provides
+  def providesCategoryService(@Inject categoryRepository: CategoryRepository): CategoryService = {
+    CategoryServiceImpl(categoryRepository)
+  }
+
+
+  @Singleton
+  @Provides
+  def providesJourneyService(@Inject deckRepository: DeckRepository,
+    journeyRepository: JourneyRepository): JourneyService = {
+    JourneyServiceWithCache(JourneyServiceImpl(deckRepository, journeyRepository))
   }
 
   @Singleton

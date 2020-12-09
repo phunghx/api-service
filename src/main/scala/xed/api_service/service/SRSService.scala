@@ -12,6 +12,7 @@ import xed.api_service.domain.{Deck, ReviewInfo, SRSCard, SRSSource, SRSStatus}
 import xed.api_service.repository.SRSRepository
 import xed.api_service.util.Implicits.FutureEnhance
 import xed.api_service.util.{Implicits, JsonUtils, TimeUtils, Utils, ZConfig}
+import xed.chatbot.domain.leaderboard.LeaderBoardItem
 import xed.userprofile.domain.ShortUserProfile
 import xed.userprofile.domain.UserProfileImplicits.UserProfileWrapper
 import xed.userprofile.{SignedInUser, UserProfileService}
@@ -66,6 +67,7 @@ trait SRSService extends Logging {
 
   def getCardReportV2(user: SignedInUser, request: GetReportRequest): Future[CardReport]
 
+  def getTopByNewCard(request: GetTopByNewCardRequest): Future[Seq[LeaderBoardItem]]
 }
 
 case class SRSServiceImpl(repository: SRSRepository,
@@ -581,6 +583,13 @@ case class SRSServiceImpl(repository: SRSRepository,
         ignoredCardCount = reportMap.get(SRSStatus.Ignored).getOrElse(0L)
       )
     }
+  }
+
+  override def getTopByNewCard(request: GetTopByNewCardRequest): Future[Seq[LeaderBoardItem]] = {
+    repository.getTopByNewCard(
+      request.fromTime,
+      request.toTime,
+      100)
   }
 
   private def mpublishAddedEvent(username: String,

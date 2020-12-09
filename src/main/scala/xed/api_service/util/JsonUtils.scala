@@ -16,6 +16,7 @@ import com.google.common.io.Files
 import com.google.protobuf.Struct
 import com.google.protobuf.util.JsonFormat
 import org.apache.commons.codec.binary.Base64
+import xed.api_service.module.CustomJsonModule
 
 import scala.collection.JavaConversions._
 
@@ -33,6 +34,7 @@ object JsonUtils {
 
   val mapper = new ObjectMapper() with ScalaObjectMapper
 
+  mapper.registerModules(DefaultScalaModule, CustomJsonModule)
 
   mapper.setPropertyNamingStrategy(PropertyNamingStrategy.SNAKE_CASE)
   mapper.setSerializationInclusion(Include.NON_NULL)

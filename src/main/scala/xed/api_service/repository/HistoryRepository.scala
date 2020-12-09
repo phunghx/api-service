@@ -9,6 +9,7 @@ import org.elasticsearch.search.aggregations.metrics.sum.InternalSum
 import xed.api_service.domain.ReviewHistoryInfo
 import xed.api_service.domain.metric.{Entry, LineData}
 import xed.api_service.repository.ESRepository.ZActionRequestBuilder
+import xed.chatbot.domain.leaderboard.LeaderBoardItem
 
 import scala.collection.JavaConversions._
 

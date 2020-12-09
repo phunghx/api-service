@@ -22,8 +22,11 @@ import xed.api_service.module._
 import xed.api_service.repository.DeckRepository
 import xed.api_service.repository.ESRepository.ZActionRequestBuilder
 import xed.api_service.repository.card.SSDBCardRepository
+import xed.api_service.service.course.CourseService
 import xed.api_service.util.Implicits.FutureEnhance
 import xed.api_service.util.{JsonUtils, ZConfig}
+import xed.chatbot.repository.CourseLearningRepository
+import xed.chatbot.service.LearnService
 
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
@@ -33,7 +36,11 @@ class RecoverMissingReviewCardTool extends IntegrationTest {
 
   override protected def injector: Injector =  Injector(Guice.createInjector(
     XedApiModule,
-    PublicPathConfigModule
+    PublicPathConfigModule,
+    BotServiceModule,
+    BotProcessorModule,
+    ChallengeModule,
+    HandlerModule
   ))
 
 val cardKey = ZConfig.getString("es_client.ssdb_card_hashmap_name")
@@ -50,6 +57,9 @@ val cardKey = ZConfig.getString("es_client.ssdb_card_hashmap_name")
 
   val deckRepository = injector.instance[DeckRepository]
   val srsBotService = injector.instance[SRSService]
+  val courseService = injector.instance[CourseService]
+  val learnService = injector.instance[LearnService]
+  val learnRepo = injector.instance[CourseLearningRepository]
   val VALID_COURSE_ID = Set(
     "V0001",
     "V0002",
@@ -69,7 +79,27 @@ val cardKey = ZConfig.getString("es_client.ssdb_card_hashmap_name")
       cardByCourses.foreach(entry =>{
         val courseId = entry._1
         val cardIds = entry._2.map(x => x(0).toString)
+//        val courseInfo = courseService.get(courseId).sync().get
+//        val sessionIds = courseInfo.journeyIds.getOrElse(ListBuffer.empty)
+//        val topicIds = courseInfo.deckIds.getOrElse(Seq.empty)
 
+        val removeOK = learnRepo.removeCompletedCourse(username, courseId)
+        val isCompleted = learnRepo.isCompletedCourse(username, courseId)
+//        sessionIds.foreach(sessionId =>{
+//          topicIds.foreach(topicId =>{
+//            learnRepo.removeLearntCardIds(username, courseId,
+//              sessionId,
+//              topicId,
+//              cardIds)
+//          })
+//        })
+
+        println(
+          s"""
+            |User: $username
+            |Course: ${courseId} - $removeOK - $isCompleted
+            |Cards: ${cardIds.size}
+            |""".stripMargin)
       })
     })
   }
@@ -141,6 +171,13 @@ val cardKey = ZConfig.getString("es_client.ssdb_card_hashmap_name")
 
   }
 
+  def getLearningCouseIds(username: String) = {
+
+    val courseIds = learnRepo.getLearningCourses(username)
+    val validCourseIds = courseIds.filter(VALID_COURSE_ID.contains(_))
+
+    (courseIds, validCourseIds)
+  }
 
   def getAllUserProfileIds() = {
     import scala.collection.JavaConversions._
